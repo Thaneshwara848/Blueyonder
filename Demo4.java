@@ -1,4 +1,8 @@
 import java.util.Scanner;
+interface Company
+{
+	void atten();
+}
 class Emp
 {
 	int id;	
@@ -16,6 +20,14 @@ class Emp
 		System.out.println("Enter AGE");
 		 age=sc.nextInt();	
 	}
+	void display()
+	{	
+		System.out.println("My ID is :"+id);
+		System.out.println("My name is :"+name);
+		System.out.println("My AGE is :"+age);
+		System.out.println("My Salary is :"+salary);
+		System.out.println("My Desig is :"+desig);
+	}
 }
 class Developer extends Emp
 {
@@ -25,28 +37,14 @@ class Developer extends Emp
 	 	salary =70000;
 	 	desig= "Developer";
 	}
-	void display()
-	{	
-		System.out.println("My ID is :"+id);
-		System.out.println("My name is :"+name);
-		System.out.println("My AGE is :"+age);
-		System.out.println("My Salary is :"+salary);
-		System.out.println("My Desig is :"+desig);
-	}
+	
 }
 class Clerk  extends  Emp
 {
 	
 	int salary =70000;
 	String desig= "Developer";
-	void display()
-	{	
-		System.out.println("My ID is :"+id);
-		System.out.println("My name is :"+name);
-		System.out.println("My AGE is :"+age);
-		System.out.println("My Salary is :"+salary);
-		System.out.println("My Desig is :"+desig);
-	}
+	
 
 }
 class Manager extends  Emp
@@ -54,28 +52,13 @@ class Manager extends  Emp
 	
 	int salary =50000;
 	String desig= "Developer";
-	void display()
-	{	
-		System.out.println("My ID is :"+id);
-		System.out.println("My name is :"+name);
-		System.out.println("My AGE is :"+age);
-		System.out.println("My Salary is :"+salary);
-		System.out.println("My Desig is :"+desig);
-	}
+	
 }
 class Tester extends  Emp
 {
 	
 	int salary =50000;
 	String desig= "Developer";
-	void display()
-	{	
-		System.out.println("My ID is :"+id);
-		System.out.println("My name is :"+name);
-		System.out.println("My AGE is :"+age);
-		System.out.println("My Salary is :"+salary);
-		System.out.println("My Desig is :"+desig);
-	}
 } 
 class Demo4
 {
