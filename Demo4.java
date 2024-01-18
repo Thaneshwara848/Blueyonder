@@ -1,7 +1,16 @@
 import java.util.Scanner;
 interface Company
 {
-	void atten();
+	public abstract void atten();
+	default void advSal()
+	{
+	System.out.println("in java 8 we can write the defaul method belngs obj");
+	}
+	static void cab()
+	{
+	System.out.println("in java 8 we can write the Static method not belngs obj");
+	}
+	public static  final  String companyname="Blue Younder";
 }
 class Emp
 {
@@ -27,15 +36,20 @@ class Emp
 		System.out.println("My AGE is :"+age);
 		System.out.println("My Salary is :"+salary);
 		System.out.println("My Desig is :"+desig);
+		System.out.println("My Company is :"+Company.companyname);
 	}
 }
-class Developer extends Emp
+class Developer extends Emp implements Company
 {
 
 	Developer()
 	{
 	 	salary =70000;
 	 	desig= "Developer";
+	}
+	public void atten()
+	{
+	
 	}
 	
 }
