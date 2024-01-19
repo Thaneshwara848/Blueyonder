@@ -1,33 +1,27 @@
-// parent // super // base 
-class Pernt
+class A
 {
-	int money=5000000;
-	 String car ="BMW";
-	int site = 5;
-	Pernt()
+	A()
 	{
-		System.out.println("Money "+money);
-		System.out.println("CAR  "+car);
-	}
+		System.out.println("A class ");
+	}	
 	
-}
-// child // sub // deriverd 
-class Child extends Pernt
-{
-	int money=20000;		
-	int site=2;
-	Child()
+	void m1()
 	{
-		System.out.println(" Child Money "+money);
-		System.out.println(" Parent  Money "+super.money);
-		System.out.println("SITE   "+(site+ super.site));	
-		System.out.println("CAR  "+car);	
+		System.out.println("A class m1 method ");
+	}
+}
+class B  extends A
+{
+	B()
+	{
+		System.out.println("B class ");
 	}
 }
 public class Demo6
 {
 	public static void main(String args[])
 	{
-		Child c = new Child();
+		//A a = new A();
+		B b = new B();
 	}
 }

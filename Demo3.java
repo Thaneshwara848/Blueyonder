@@ -2,18 +2,11 @@ import java.util.Scanner;
 class Emp
 {
 	byte a=127;
-	short s=32766;	
-	long i=9234567890L;
-	float f= 10/3f;
-	double d= 10/3d;
-	int a=100;
+	short s=32767;	
 	void display()
 	{	
-		System.out.println("Byte: "+a);
-		System.out.println("Short  : "+s);
-		System.out.println("INTs  : "+i);
-		System.out.println("Float   : "+f);
-		System.out.println("Double    : "+d);
+		System.out.println("A : "+a);		
+		
 	}
 }
 class Demo3

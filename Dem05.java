@@ -10,6 +10,7 @@ class B extends A
 {
 	int c=30;
 	int d=40;	
+		
 	void m2()
 	{
 		System.out.println("M2  :"+(c+d));
