@@ -45,10 +45,10 @@ class Demo22
 				System.out.println("			K :"+k);
 				Thread.sleep(1000);
 				if(k==10){
-					t1.suspend();
+					t1.wait();
 				}
 				if(k==25){
-					t1.resume();
+					t1.notify();
 				}
 				if(k==15){
 					t2.suspend();
